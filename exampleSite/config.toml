@@ -64,7 +64,7 @@ googleAnalitycsID = "Your ID"
   enable = true
 
   [params.contact]
-  enable = true
+  enable = false
   formAction = "#" #contact form works with formspree.io
 
   [params.footer]
