@@ -252,7 +252,7 @@
         {{ range first 3 .Data.Pages }}
         <div class="col-lg-4 col-sm-6 mb-4">
           <article class="card shadow">
-            <img class="rounded card-img-top" src="{{.Params.Image | absURL}}" alt="post-thumb">
+            <img class="rounded card-img-top" src="{{.Params.Image | absURL}}" style="max-width: 200px; height: auto;" alt="post-thumb">
             <div class="card-body">
               <h4 class="card-title"><a class="text-dark" href="{{.Permalink}}">{{.Title }}</a>
               </h4>
