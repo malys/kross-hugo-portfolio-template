@@ -64,6 +64,8 @@
 {{ range .Site.Params.plugins.js}}
 <script src="{{ .URL | absURL }}"></script>
 {{ end }}
+<script src="https://unpkg.com/lunr/lunr.min.js"></script>
+
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
